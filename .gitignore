@@ -32,5 +32,8 @@ replay_pid*
 *.iml
 out
 gen
+misc.xml
+vcs.xml
+workspase.xml
 
 target/

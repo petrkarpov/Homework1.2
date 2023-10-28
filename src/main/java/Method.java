@@ -1,32 +1,33 @@
 public class Method {
     //класс main
     public static void main(String[] args) {
-        double scirc = scircle(6);
-        System.out.println("площадь круга: " + scirc);
+        double circleArea = getCircleArea(6);
+        System.out.println("площадь круга: " + circleArea);
 
-        double stri = striangle(0.6, 10, 12);
-        System.out.println("площадь треугольника: " + stri);
+        double triangleArea = getTriangleArea(0.6, 10, 12);
+        System.out.println("площадь треугольника: " + triangleArea);
 
-        int sque = square(5);
-        System.out.println("площадь квадрата: " + sque);
+        int squareArea = getSquareArea(5);
+        System.out.println("площадь квадрата: " + squareArea);
 
     }
 
-    //площадь круга (с плавающей точкой)
-    public static double scircle(int r) {
+    //площадь круга
+    public static double getCircleArea(int r) {
         double pi = 3.14;
-        double scirc = pi * (r * r);
-        return scirc;
+        double circleArea = pi * (r * r);
+        return circleArea;
     }
 
     //площадь треугольника
-    public static double striangle(double sinC, int a, int b) {
-        double stri = 0.5 * a * b * sinC;
-        return stri;
+    public static double getTriangleArea(double sinC, int a, int b) {
+        double triangleArea = 0.5 * a * b * sinC;
+        return triangleArea;
     }
 
-    public static int square(int a) {
-        int sque = a * a;
-        return sque;
+    //площадь квадрата
+    public static int getSquareArea(int a) {
+        int squareArea = a * a;
+        return squareArea;
     }
 }
